@@ -1,0 +1,69 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+.sidebar {
+    position: fixed;
+    top: 0; /* sempre grudado no topo */
+    left: 0;
+    bottom: 0;
+    /* top, left, bottom e right usamos para trabalhar com os position, eles são diferentes de margin-left, etc */
+    padding: 12px;
+    width: 300px;
+}
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;/* cima - direita - baixo - esquerda */
+}
+.sidebar__navigation .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+.sidebar__navigation .logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px; /* não ficar gudado na imagem */
+    padding: 0 20px 10px 20px;
+}
+.sidebar ul li {
+    padding: 10px 0;
+}
+.sidebar nav ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600; /* Peso da letra, podemos colocar em números para baixo ou para cima, para colocar por ex em negrito */
+    font-size: 14px; /*Reflete nos ícones tbm pq são considerados texto */
+    font-family: "DM Sans", sans-serif;
+}
+
+/* DESAFIO AULA 1 - FAZER O MINHA BIBLIOTECA */
+header {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 20px 8px 27px;/* cima - direita - baixo - esquerda */
+    margin-top: 10px;
+}
+header .sessao-biblioteca {
+    display: flex; 
+}
+header .biblioteca {
+    /* display: flex;
+    flex-direction: column;
+    gap: 4px;  */
+    margin-inline-end: auto; /* colar no fim da div */
+}
+header button {
+    padding: 4px 8px;
+    height: 40px;
+    cursor: pointer;
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 600;
+    background: #121212;
+    border: none;
+}
