@@ -41,29 +41,116 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-/* DESAFIO AULA 1 - FAZER O MINHA BIBLIOTECA */
-header {
+/* AULA 2 */
+.library {
     background-color: #121212;
     border-radius: 8px;
-    padding: 16px 20px 8px 27px;/* cima - direita - baixo - esquerda */
     margin-top: 10px;
-}
-header .sessao-biblioteca {
-    display: flex; 
-}
-header .biblioteca {
-    /* display: flex;
-    flex-direction: column;
-    gap: 4px;  */
-    margin-inline-end: auto; /* colar no fim da div */
-}
-header button {
-    padding: 4px 8px;
-    height: 40px;
-    cursor: pointer;
-    color: #a7a7a7;
-    font-size: 16px;
+    display: flex; /* Flexibilidade para posicionar em coluna ou linha */
+    justify-content: space-between;/* Faz todos os objetos estarem justificados com um espaço entre eles */
+    flex-direction: column;/* Ficara as 4 sessões uma embaixo da outra */
+    padding: 4px 8px;/* top+bottom right+left */
+    color: #b3b3b3;
     font-weight: 600;
-    background: #121212;
-    border: none;
+    font-size: 14px;
+    margin-top: 10px ;
+}
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+.library .library__content .fa-plus {
+    margin: 24px 10px;
+}
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+.section-playlist__content .text {
+    padding-bottom: 14px;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+.section-playlist__content .title {
+    font-weight: 700px;
+    font-family: "DM Sans", sans-serif;
+}
+.section-playlist__content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+.section-playlist__content .section-playlist__button {
+    display: flex;/* Colocamos aqui para alinhar o texto dentro dele */
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    margin-top: 12px;
+    padding: 10px;
+    border: 0;
+    width: 113px;
+}
+
+.sidebar .cookies {
+    margin: 25px 20px;
+}
+.sidebar .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.languages .languages__button {
+    background: transparent;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    font-weight: bold;/* ou 700*/
+    color: #fff;
+    cursor: pointer;
+    align-items: center;/* Aqui não precisa do display:flex pq só tem texto  */
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
 }
